@@ -10,11 +10,10 @@ public abstract class AbstractWorldMap implements IWorldMap {
 
     @Override
     public boolean add(Car car) {
-        if(!isOccupied(car.getPosition())) {
+        if (!isOccupied(car.getPosition())) {
             cars.add(car);
             return true;
-        }
-        else throw new IllegalArgumentException("Position "  + car.getPosition().toString() + " is occupied");
+        } else throw new IllegalArgumentException("Position " + car.getPosition().toString() + " is occupied");
     }
 
     @Override
@@ -26,14 +25,14 @@ public abstract class AbstractWorldMap implements IWorldMap {
 
     @Override
     public boolean isOccupied(Position position) {
-        for(Car car : cars) {
-            if(car.getPosition().equals(position)) {
+        for (Car car : cars) {
+            if (car.getPosition().equals(position)) {
                 return true;
             }
         }
 
-        for(HayStack hayStack : hayStacks) {
-            if(hayStack.getPosition().equals(position)) {
+        for (HayStack hayStack : hayStacks) {
+            if (hayStack.getPosition().equals(position)) {
                 return true;
             }
         }
@@ -42,14 +41,14 @@ public abstract class AbstractWorldMap implements IWorldMap {
 
     @Override
     public Object objectAt(Position position) {
-        for(Car car : cars) {
-            if(car.getPosition().equals(position)) {
+        for (Car car : cars) {
+            if (car.getPosition().equals(position)) {
                 return car;
             }
         }
 
-        for(HayStack hayStack : hayStacks) {
-            if(hayStack.getPosition().equals(position)) {
+        for (HayStack hayStack : hayStacks) {
+            if (hayStack.getPosition().equals(position)) {
                 return hayStack;
             }
         }

@@ -7,7 +7,6 @@ public class Car {
     IWorldMap map;
 
     public Car(IWorldMap map) {
-        //map.add(this);
         this.map = map;
         this.position = new Position(2, 2);
         this.orientation = MapOrientation.North;

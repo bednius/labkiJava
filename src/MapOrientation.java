@@ -8,20 +8,25 @@ public enum MapOrientation {
     West;
 
     public String toString() {
-        switch(this) {
-            case North: return "^";
-            case South: return "v";
-            case West: return "<";
-            case East: return ">";
-            default: return "unknown orientation";
+        switch (this) {
+            case North:
+                return "^";
+            case South:
+                return "v";
+            case West:
+                return "<";
+            case East:
+                return ">";
+            default:
+                return "unknown orientation";
         }
     }
 
     public MapOrientation next() {
-        return MapOrientation.values()[(this.ordinal()+1)%4];
+        return MapOrientation.values()[(this.ordinal() + 1) % 4];
     }
 
     public MapOrientation previous() {
-        return MapOrientation.values()[(this.ordinal()+3)%4];
+        return MapOrientation.values()[(this.ordinal() + 3) % 4];
     }
 }

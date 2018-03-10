@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  * Created by kreska on 27.11.16.
  */
@@ -12,10 +8,6 @@ public class RectangularMap extends AbstractWorldMap {
     public RectangularMap(int width, int height) {
         this.topRightCorner = new Position(width, height);
     }
-
-    /*public Position getBorder() {
-        return this.topRightCorner;
-    }*/
 
     @Override
     public String toString() {

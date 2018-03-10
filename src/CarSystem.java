@@ -1,7 +1,5 @@
-import java.io.CharArrayReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
 
 /**
  * Created by kreska on 26.11.16.
@@ -103,12 +101,5 @@ public class CarSystem {
                 }
             }
         }
-        /*if(args.length > 0) {
-            for (int i = 0; i < args.length - 1; i++) {
-                System.out.print(args[i]);
-                System.out.print(",");
-            }
-            System.out.println(args[args.length - 1]);
-        }*/
     }
 }

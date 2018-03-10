@@ -7,12 +7,9 @@ public class MapVisualizer {
      * indices of the map will have no more than two characters (including the
      * sign).
      *
-     * @param map
-     *            The map to convert.
-     * @param lowerLeft
-     *            The lower left corner of the region that is dumped.
-     * @param upperRight
-     *            The upper right corner of the region that is dumped.
+     * @param map        The map to convert.
+     * @param lowerLeft  The lower left corner of the region that is dumped.
+     * @param upperRight The upper right corner of the region that is dumped.
      * @return String representation of the selected region of the map.
      */
     public String dump(IWorldMap map, Position lowerLeft, Position upperRight) {

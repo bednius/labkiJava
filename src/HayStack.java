@@ -1,7 +1,7 @@
 /**
  * Created by kreska on 27.11.16.
  */
-public class HayStack{
+public class HayStack {
     public Position position;
 
     public HayStack(Position position) {
